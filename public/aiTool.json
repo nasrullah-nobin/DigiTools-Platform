@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "WriteGenius AI",
+    "description": "AI-powered writing assistant for blogs, emails, and marketing content.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "SEO-optimized content",
+      "50+ writing templates",
+      "Grammar & tone correction",
+      "Multi-language support"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "DesignCraft AI",
+    "description": "Create stunning social media graphics and presentations instantly.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "1000+ design templates",
+      "Drag & drop editor",
+      "AI image generator",
+      "Brand kit integration"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "CodePilot Pro",
+    "description": "AI coding assistant for faster development and debugging.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Auto code completion",
+      "Bug detection",
+      "Multi-language support",
+      "IDE integration"
+    ],
+    "icon": "💻"
+  },
+  {
+    "id": 4,
+    "name": "VoiceClone AI",
+    "description": "Generate realistic voiceovers using AI voice cloning technology.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Realistic voice cloning",
+      "Multiple accents",
+      "Text-to-speech",
+      "Audio export"
+    ],
+    "icon": "🎙️"
+  },
+  {
+    "id": 5,
+    "name": "ResumeBoost AI",
+    "description": "Build professional resumes with ATS optimization.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "ATS-friendly templates",
+      "AI suggestions",
+      "Export to PDF",
+      "Cover letter generator"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "ChatFlow AI",
+    "description": "Build intelligent chatbots for websites and apps.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "No-code chatbot builder",
+      "Live chat integration",
+      "Analytics dashboard",
+      "Multi-platform support"
+    ],
+    "icon": "🤖"
+  },
+  {
+    "id": 7,
+    "name": "VideoGen AI",
+    "description": "Create engaging videos from text using AI.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Text-to-video generation",
+      "Stock footage library",
+      "Voice narration",
+      "HD export"
+    ],
+    "icon": "🎬"
+  },
+  {
+    "id": 8,
+    "name": "DataInsight AI",
+    "description": "Analyze and visualize data with AI-driven insights.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Automated data analysis",
+      "Interactive dashboards",
+      "Predictive analytics",
+      "Export reports"
+    ],
+    "icon": "📊"
+  }
+]
