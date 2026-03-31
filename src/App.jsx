@@ -20,16 +20,16 @@ function App() {
         <NavBar cart={cart}></NavBar>
         <Banner></Banner>
       </header>
-      {/* <main>
+      <main>
         <OurImpact></OurImpact>
-        <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
+        {/* <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
         <GetStarts></GetStarts>
         <PricingTools></PricingTools>
-        <Workflow></Workflow>
+        <Workflow></Workflow> */}
       </main>
       <footer>
-        <Footer></Footer>
-      </footer> */}
+        {/* <Footer></Footer> */}
+      </footer>
     </>
   );
 }
