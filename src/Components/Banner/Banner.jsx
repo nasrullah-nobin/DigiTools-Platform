@@ -12,7 +12,7 @@ const Banner = () => {
             New: AI-Powered Tools Available
           </p>
         </div>
-        <h1 className="text-7xl font-extrabold space-y-2">Supercharge Your <br /> Digital Workflow</h1>
+        <h1 className="text-6xl font-extrabold space-y-2">Supercharge Your <br /> <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Digital Workflow</span></h1>
         <p className="text-lg text-gray-400">
           Access premium AI tools, design assets, templates, and productivity <br />
           software—all in one place. Start creating faster today. <br /> Explore
