@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { toast } from "react-toastify";
 
@@ -10,7 +10,7 @@ const ProductsCart = ({ product, cart, setCart }) => {
       toast.warn("Item is already in your cart.");
       return;
     }
-    toast.success('added to cart successfully!')
+    toast.success("added to cart successfully!");
     setCart([...cart, selectedCart]);
     setSelected(true);
   };

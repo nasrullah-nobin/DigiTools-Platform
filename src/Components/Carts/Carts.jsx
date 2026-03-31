@@ -2,7 +2,7 @@ import React from "react";
 import { BsCartX } from "react-icons/bs";
 import { toast } from "react-toastify";
 
-const Carts = ({ cart, setCart }) => {
+const Carts = ({ cart, setCart}) => {
   const totalPrice = cart.reduce((sum, item) => item.price + sum, 0);
   const handlePayment = () => {
     cart.length > 0 && toast.success("Payment successful!");

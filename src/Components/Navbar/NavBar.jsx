@@ -2,86 +2,76 @@ import React from "react";
 import { BsCart2 } from "react-icons/bs";
 
 const NavBar = ({cart}) => {
-  console.log(cart)
   return (
-   <div className="shadow-sm fixed top-0 left-0 right-0 bg-white z-50">
-     <div className="navbar w-7xl mx-auto">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
-          </div>
-          <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+  <div className="shadow-sm fixed top-0 left-0 right-0 bg-white z-50">
+  <div className="navbar max-w-7xl mx-auto px-4">
+
+    <div className="navbar-start">
+      <div className="dropdown">
+        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <li>
-              <a>Products</a>
-            </li>
-            <li>
-              <a>Features</a>
-            </li>
-            <li>
-              <a>Pricing</a>
-            </li>
-            <li>
-              <a>Testimonials</a>
-            </li>
-            <li>
-              <a>FAQ</a>
-            </li>
-          </ul>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
         </div>
-        <a className="text-2xl font-bold bg-linear-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
-          DigiTools
-        </a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Products</a>
-          </li>
-          <li>
-            <a>Features</a>
-          </li>
-          <li>
-            <a>Pricing</a>
-          </li>
-          <li>
-            <a>Testimonials</a>
-          </li>
-          <li>
-            <a>FAQ</a>
-          </li>
+
+
+        <ul
+          tabIndex={0}
+          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+        >
+          <li><a>Products</a></li>
+          <li><a>Features</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Testimonials</a></li>
+          <li><a>FAQ</a></li>
         </ul>
       </div>
-      <div className="navbar-end gap-4">
-        <div className="relative">
-          <BsCart2 className="text-3xl" />
 
-          {cart.length >0 && <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 rounded-full">
-           {cart.length}
-          </span>}
-        </div>
-        <button className="btn btn-ghost">Login</button>
-        <a className="btn rounded-full bg-linear-to-l from-[#4F39F6] to-[#9514FA] text-white w-fit">Get Started</a>
-      </div>
+      <a className="text-2xl font-bold bg-linear-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
+        DigiTools
+      </a>
     </div>
-   </div>
+
+   
+    <div className="navbar-center hidden lg:flex">
+      <ul className="menu menu-horizontal px-1">
+        <li><a>Products</a></li>
+        <li><a>Features</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>Testimonials</a></li>
+        <li><a>FAQ</a></li>
+      </ul>
+    </div>
+
+    
+    <div className="navbar-end gap-2 md:gap-4">
+
+      
+      <div className="relative">
+        <BsCart2 className="text-2xl md:text-3xl" />
+        {cart.length > 0 && (
+          <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 rounded-full">
+            {cart.length}
+          </span>
+        )}
+      </div>
+
+      <button className="btn btn-ghost hidden sm:block">Login</button>
+
+      <a className="btn rounded-full bg-linear-to-l from-[#4F39F6] to-[#9514FA] text-white px-4">
+        Get Started
+      </a>
+
+    </div>
+  </div>
+</div>
   );
 };
 

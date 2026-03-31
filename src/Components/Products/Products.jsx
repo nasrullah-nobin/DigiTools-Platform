@@ -7,8 +7,6 @@ const Products = ({ aiToolsPromise,cart, setCart}) => {
   const aiTools = use(aiToolsPromise);
   const [active, setActive] = useState("product");
 
-  
-
   return (
     <section className="mt-28">
       <div className="text-center space-y-3.5">

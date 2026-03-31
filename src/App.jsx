@@ -13,13 +13,14 @@ const aiToolsPromise = fetch("/public/aiTool.json").then((res) => res.json());
 
 function App() {
   const [cart, setCart] = useState([]);
+  
   return (
     <>
       <header>
         <NavBar cart={cart}></NavBar>
         <Banner></Banner>
       </header>
-      <main>
+      {/* <main>
         <OurImpact></OurImpact>
         <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
         <GetStarts></GetStarts>
@@ -28,7 +29,7 @@ function App() {
       </main>
       <footer>
         <Footer></Footer>
-      </footer>
+      </footer> */}
     </>
   );
 }
