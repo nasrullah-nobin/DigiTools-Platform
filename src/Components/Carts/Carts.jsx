@@ -14,7 +14,7 @@ const Carts = ({ cart, setCart}) => {
     setCart(filterItem)
   }
   return (
-    <div className="w-7xl mx-auto space-y-3 bg-white rounded-2xl p-5 shadow mt-10">
+    <div className="max-w-7xl mx-auto space-y-3 bg-white rounded-2xl p-5 shadow mt-10">
       <h2 className="text-2xl font-bold">Your Cart</h2>
       {cart.length === 0 ? (
         <div className="text-center space-y-5">

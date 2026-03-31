@@ -6,12 +6,12 @@ import startCreating from '../../assets/rocket.png'
 const GetStarts = () => {
   return (
     <section className="bg-[#F9FAFC] my-28 py-28">
-      <div className="text-center w-7xl mx-auto space-y-3">
+      <div className="text-center max-w-7xl mx-auto space-y-3">
         <h1 className="text-5xl font-extrabold">Get Started in 3 Steps</h1>
         <p className="text-base text-gray-400">
           Start using premium digital tools in minutes, not hours.
         </p>
-        <div className="flex justify-center items-center gap-6 mt-10">
+        <div className="flex justify-center flex-wrap items-center gap-6 mt-10 p-5">
           <div className="relative shadow rounded-2xl px-6 py-16 space-y-3 bg-white">
             <div className="bg-[#F3E9FE] rounded-full p-5 w-20 mx-auto">
               <img src={userImg} alt="" />

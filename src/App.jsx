@@ -22,9 +22,9 @@ function App() {
       </header>
       <main>
         <OurImpact></OurImpact>
-        {/* <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
+        <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
         <GetStarts></GetStarts>
-        <PricingTools></PricingTools>
+        {/* <PricingTools></PricingTools>
         <Workflow></Workflow> */}
       </main>
       <footer>

@@ -33,7 +33,7 @@ const Products = ({ aiToolsPromise,cart, setCart}) => {
       </div>
 
       {active === "product" && (
-        <div className="w-7xl mx-auto grid grid-cols-3 gap-7 mt-11">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7 mt-11">
           {aiTools.map((product) => (
             <ProductsCart
               cart={cart}
