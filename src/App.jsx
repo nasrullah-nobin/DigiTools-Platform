@@ -5,6 +5,7 @@ import NavBar from "./Components/Navbar/NavBar";
 import OurImpact from "./Components/OurImpact/OurImpact";
 import Premium from "./Components/Premium/Premium";
 import PricingTools from "./Components/PricingTools/PricingTools";
+import Workflow from "./Components/Workflow/Workflow";
 
 const aiToolsPromise = fetch("/public/aiTool.json").then((res) => res.json());
 
@@ -20,6 +21,7 @@ function App() {
         <Premium aiToolsPromise={aiToolsPromise}></Premium>
         <GetStarts></GetStarts>
         <PricingTools></PricingTools>
+        <Workflow></Workflow>
       </main>
     </>
   );
