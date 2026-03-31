@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
+import Footer from "./Components/Footer/Footer";
 import GetStarts from "./Components/GetStarts/GetStarts";
 import NavBar from "./Components/Navbar/NavBar";
 import OurImpact from "./Components/OurImpact/OurImpact";
@@ -23,6 +24,9 @@ function App() {
         <PricingTools></PricingTools>
         <Workflow></Workflow>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 }
