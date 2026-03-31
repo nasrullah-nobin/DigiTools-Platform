@@ -3,11 +3,11 @@ import React, { use, useState } from "react";
 import Carts from "../Carts/Carts";
 import ProductsCart from "./ProductsCart";
 
-const Products = ({ aiToolsPromise }) => {
+const Products = ({ aiToolsPromise}) => {
   const aiTools = use(aiToolsPromise);
   const [active, setActive] = useState("product");
 
-  
+  const [cart, setCart] = useState([]);
 
   return (
     <section className="mt-28">
@@ -30,17 +30,24 @@ const Products = ({ aiToolsPromise }) => {
           onClick={() => setActive("cart")}
           className={`btn rounded-full border-none ${active === "cart" ? "bg-linear-to-l from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"}`}
         >
-          Cart (<span>0</span>)
+          Cart (<span>{cart.length}</span>)
         </button>
       </div>
 
       {active === "product" && (
         <div className="w-7xl mx-auto grid grid-cols-3 gap-7 mt-11">
-          {aiTools.map((product) => <ProductsCart key={product.id} product={product}></ProductsCart>)}
+          {aiTools.map((product) => (
+            <ProductsCart
+              cart={cart}
+              setCart={setCart}
+              key={product.id}
+              product={product}
+            ></ProductsCart>
+          ))}
         </div>
       )}
 
-      {active === "cart" && <Carts></Carts>}
+      {active === "cart" && <Carts cart={cart} setCart={setCart}></Carts>}
     </section>
   );
 };
