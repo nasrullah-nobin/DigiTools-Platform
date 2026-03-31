@@ -4,7 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import GetStarts from "./Components/GetStarts/GetStarts";
 import NavBar from "./Components/Navbar/NavBar";
 import OurImpact from "./Components/OurImpact/OurImpact";
-import Premium from "./Components/Premium/Premium";
+import Products from "./Components/Products/Products";
 import PricingTools from "./Components/PricingTools/PricingTools";
 import Workflow from "./Components/Workflow/Workflow";
 
@@ -19,7 +19,7 @@ function App() {
       </header>
       <main>
         <OurImpact></OurImpact>
-        <Premium aiToolsPromise={aiToolsPromise}></Premium>
+        <Products aiToolsPromise={aiToolsPromise}></Products>
         <GetStarts></GetStarts>
         <PricingTools></PricingTools>
         <Workflow></Workflow>
