@@ -1,9 +1,10 @@
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
 
-const NavBar = () => {
+const NavBar = ({cart}) => {
+  console.log(cart)
   return (
-   <div className="shadow-sm">
+   <div className="shadow-sm fixed top-0 left-0 right-0 bg-white z-50">
      <div className="navbar w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
@@ -72,9 +73,9 @@ const NavBar = () => {
         <div className="relative">
           <BsCart2 className="text-3xl" />
 
-          <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 rounded-full">
-            0
-          </span>
+          {cart.length >0 && <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 rounded-full">
+           {cart.length}
+          </span>}
         </div>
         <button className="btn btn-ghost">Login</button>
         <a className="btn rounded-full bg-linear-to-l from-[#4F39F6] to-[#9514FA] text-white w-fit">Get Started</a>

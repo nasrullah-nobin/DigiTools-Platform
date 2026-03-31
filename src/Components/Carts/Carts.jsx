@@ -8,6 +8,11 @@ const Carts = ({ cart, setCart }) => {
     cart.length > 0 && toast.success("Payment successful!");
     setCart([]);
   };
+  const removeItem =(item)=> {
+    const filterItem = cart.filter(i => i.id !== item.id);
+    toast.warn('Item removed from cart.')
+    setCart(filterItem)
+  }
   return (
     <div className="w-7xl mx-auto space-y-3 bg-white rounded-2xl p-5 shadow mt-10">
       <h2 className="text-2xl font-bold">Your Cart</h2>
@@ -36,7 +41,7 @@ const Carts = ({ cart, setCart }) => {
                   </p>
                 </div>
               </div>
-              <p className="text-base text-[#FF3980] cursor-pointer">Remove</p>
+              <p onClick={()=> removeItem(c)} className="text-base text-[#FF3980] cursor-pointer">Remove</p>
             </div>
           ))}
 

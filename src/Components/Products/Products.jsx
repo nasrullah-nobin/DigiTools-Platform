@@ -3,11 +3,11 @@ import React, { use, useState } from "react";
 import Carts from "../Carts/Carts";
 import ProductsCart from "./ProductsCart";
 
-const Products = ({ aiToolsPromise}) => {
+const Products = ({ aiToolsPromise,cart, setCart}) => {
   const aiTools = use(aiToolsPromise);
   const [active, setActive] = useState("product");
 
-  const [cart, setCart] = useState([]);
+  
 
   return (
     <section className="mt-28">

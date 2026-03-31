@@ -7,19 +7,21 @@ import OurImpact from "./Components/OurImpact/OurImpact";
 import Products from "./Components/Products/Products";
 import PricingTools from "./Components/PricingTools/PricingTools";
 import Workflow from "./Components/Workflow/Workflow";
+import { useState } from "react";
 
 const aiToolsPromise = fetch("/public/aiTool.json").then((res) => res.json());
 
 function App() {
+  const [cart, setCart] = useState([]);
   return (
     <>
       <header>
-        <NavBar></NavBar>
+        <NavBar cart={cart}></NavBar>
         <Banner></Banner>
       </header>
       <main>
         <OurImpact></OurImpact>
-        <Products aiToolsPromise={aiToolsPromise}></Products>
+        <Products cart={cart} setCart={setCart} aiToolsPromise={aiToolsPromise}></Products>
         <GetStarts></GetStarts>
         <PricingTools></PricingTools>
         <Workflow></Workflow>
