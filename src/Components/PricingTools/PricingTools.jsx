@@ -9,7 +9,7 @@ const PricingTools = () => {
         Choose the plan that fits your needs. Upgrade or downgrade anytime.
       </p>
 
-      <div className="flex justify-center gap-3">
+      <div className="flex justify-center flex-wrap gap-3 space-y-5">
         <div className="w-96 bg-[#F2F2F2] p-6 rounded-2xl space-y-5 text-left">
           <h6 className="text-2xl font-bold">Starter</h6>
           <p className="text-gray-400">Perfect for getting started</p>

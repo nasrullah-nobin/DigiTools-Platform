@@ -11,7 +11,7 @@ const GetStarts = () => {
         <p className="text-base text-gray-400">
           Start using premium digital tools in minutes, not hours.
         </p>
-        <div className="flex justify-center flex-wrap items-center gap-6 mt-10 p-5">
+        <div className="flex justify-center flex-wrap md:flex-nowrap items-center gap-6 mt-10 p-5">
           <div className="relative shadow rounded-2xl px-6 py-16 space-y-3 bg-white">
             <div className="bg-[#F3E9FE] rounded-full p-5 w-20 mx-auto">
               <img src={userImg} alt="" />

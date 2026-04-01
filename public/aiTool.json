@@ -5,7 +5,7 @@
     "description": "AI-powered writing assistant for blogs, emails, and marketing content.",
     "price": 19,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "SEO-optimized content",
@@ -21,8 +21,8 @@
     "description": "Create stunning social media graphics and presentations instantly.",
     "price": 29,
     "period": "monthly",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best",
     "features": [
       "1000+ design templates",
       "Drag & drop editor",
@@ -37,7 +37,7 @@
     "description": "AI coding assistant for faster development and debugging.",
     "price": 0,
     "period": "one-time",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": [
       "Auto code completion",
@@ -53,7 +53,7 @@
     "description": "Generate realistic voice overs using AI voice cloning technology.",
     "price": 49,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "Realistic voice cloning",
@@ -69,8 +69,8 @@
     "description": "Build professional resumes with ATS optimization.",
     "price": 15,
     "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best",
     "features": [
       "ATS-friendly templates",
       "AI suggestions",
@@ -85,7 +85,7 @@
     "description": "Build intelligent chatbots for websites and apps.",
     "price": 25,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": [
       "No-code chatbot builder",
@@ -101,7 +101,7 @@
     "description": "Create engaging videos from text using AI.",
     "price": 59,
     "period": "monthly",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": [
       "Text-to-video generation",
@@ -117,8 +117,8 @@
     "description": "Analyze and visualize data with AI-driven insights.",
     "price": 99,
     "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Best Seller",
+    "tagType": "best",
     "features": [
       "Automated data analysis",
       "Interactive dashboards",

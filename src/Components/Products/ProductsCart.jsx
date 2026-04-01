@@ -23,11 +23,11 @@ const ProductsCart = ({ product, cart, setCart }) => {
 
         <div
           className={`badge ${
-            product.tag === "popular"
+            product.tagType === "popular"
               ? "bg-[#FEF3C6] text-[#BB4D00]"
-              : product.tag === "best seller"
+              : product.tagType === "best"
                 ? "bg-[#E1E7FF] text-[#4F39F6]"
-                : product.tag === "new"
+                : product.tagType === "new"
                   ? "bg-[#DBFCE7] text-[#0A883E]"
                   : null
           }`}
