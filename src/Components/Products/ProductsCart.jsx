@@ -1,18 +1,15 @@
-import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const ProductsCart = ({ product, cart, setCart }) => {
-  const [selected, setSelected] = useState(false);
+  const exist = cart.find((c) => c.id === product.id);
   const handleAddToCart = (selectedCart) => {
-    const exist = cart.find((c) => c.id === product.id);
     if (exist) {
       toast.warn("Item is already in your cart.");
       return;
     }
     toast.success("added to cart successfully!");
     setCart([...cart, selectedCart]);
-    setSelected(true);
   };
   return (
     <div className="shadow-sm rounded-2xl p-6 space-y-3" key={product.id}>
@@ -48,9 +45,9 @@ const ProductsCart = ({ product, cart, setCart }) => {
       ))}
       <button
         onClick={() => handleAddToCart(product)}
-        className={`btn rounded-full  text-white w-full ${selected ? "bg-green-500" : "bg-linear-to-l from-[#4F39F6] to-[#9514FA]"}`}
+        className={`btn rounded-full  text-white w-full ${exist ? "bg-green-500" : "bg-linear-to-l from-[#4F39F6] to-[#9514FA]"}`}
       >
-        {selected ? "Added To cart" : "Buy Now"}
+        {exist ? "Added To cart" : "Buy Now"}
       </button>
     </div>
   );
